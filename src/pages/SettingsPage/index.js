@@ -1,18 +1,27 @@
 import React from 'react';
+import ManageStore from '../../components/ManegeStore';
+import ManagePromotion from '../../components/ManagePromotion';
 
 const Config = () => {
     return (
-        <div className="row">
-        <div className="input-group mb-3 mt-3 col-md-6 ">
-            <div className="input-group-prepend">
-                <span className="input-group-text" id="inputGroupFileAddon01">Upload</span>
+
+        <div style={{height: "600px"}} class="card mt-2">
+            <div class="card-header">
+                <h5>Configurações</h5>
             </div>
-            <div className="custom-file">
-                <input type="file" className="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" />
-                <label className="custom-file-label" for="inputGroupFile01">Choose file</label>
+            <div class="card-body">
+                <div className="row">
+                    <div className="col">
+                        <ManageStore />
+                    </div>
+                    <div className="col">
+                        <ManagePromotion />
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
+
+
     )
 }
 

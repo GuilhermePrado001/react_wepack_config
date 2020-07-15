@@ -16,10 +16,17 @@ const ProductsList = () => {
     }, [products]);
 
     return (
-        <div class="row" >
-            {products.map(p => {
-                return <ProductItens products={p} />
-            })}
+        <div className="card mt-2 mb-3">
+            <div class="card-body">
+                <header>
+                    <h5 className="text-center">Produtos que você pode encontrar no salão</h5>
+                </header>
+                <div class="row" >
+                    {products.map(p => {
+                        return <ProductItens products={p} />
+                    })}
+                </div>
+            </div>
         </div>
     )
 }

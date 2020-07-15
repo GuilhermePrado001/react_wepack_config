@@ -1,5 +1,6 @@
 import "bootstrap/js/src/carousel.js";
 import ProductsList from '../../components/ProductList/index.js'
+import InfoComponent from '../../components/InfoCard/index.js'
 import React from 'react';
 
 const HomeComponent = () => {
@@ -33,8 +34,9 @@ const HomeComponent = () => {
                 </a>
             </div>
 
+            <InfoComponent title={"Sobre nós"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."} />
             <ProductsList />
-
+         
         </div>
 
     )
