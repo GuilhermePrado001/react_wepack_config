@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,11 +9,7 @@ import Client from './pages/Clients/index';
 import Schedule from './pages/Schedule/index';
 import Config from './pages/SettingsPage/index';
 import SettingsProvider from "./Context/SettingsContext";
-import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
-import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
-import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
-import "../node_modules/@syncfusion/ej2-react-calendars/styles/material.css";
+
 
 const App = () => {
 
@@ -26,7 +22,7 @@ const App = () => {
             <SettingsProvider>
 
               <NavBar />
-              <Route exact path="/" component={Schedule}></Route>
+              <Route exact path="/" component={Config}></Route>
               <Route path="/schedule" component={Schedule}></Route>
               <Route path="/clients" component={Client}></Route>
               <Route path="/config" component={Config}></Route>

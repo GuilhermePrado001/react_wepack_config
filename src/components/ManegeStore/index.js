@@ -14,12 +14,12 @@ function ManageStore() {
 
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Nome do Produto" />
-              <input type="text" class="form-control mt-2" placeholder="Descrição" />
+              <input type="text" class="form-control form-control-sm" placeholder="Nome do Produto" />
+              <input type="text" class="form-control form-control-sm mt-2" placeholder="Descrição" />
             </div>
           </div>
 
-          <button class="btn btn-primary mt-2" type="button">Adicionar a Loja</button>
+          <button class="btn btn-sm btn-primary mt-2" type="button">Adicionar a Loja</button>
 
         </form>
       );
@@ -30,7 +30,7 @@ function ManageStore() {
   return (
 
     <div class="card">
-      <div style={{ height: "250px" }} class="card-body">
+      <div class="card-body">
         <h5 class="card-title">Gerenciar Loja</h5>
 
         <BootstrapSwitchButton

@@ -13,7 +13,7 @@ function ManagePromotion() {
                 <form className="mt-2">
                     <p>
                         <small class="text-muted">Após quantos corte o cliente ganhará o corte grátis?</small>
-                        <input type="text" class="form-control w-25" placeholder="Qtd" />
+                        <input type="text" class="form-control form-control-sm " placeholder="Qtd" />
                     </p>               
                 </form>
             );
@@ -21,7 +21,7 @@ function ManagePromotion() {
     }
 
     return (
-        <div style={{height: "250px"}} className="card">
+        <div className="card">
             
             <div class="card-body">
                 <h5 class="card-title">Gerenciar Promoção</h5>
