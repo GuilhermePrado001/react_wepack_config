@@ -9,6 +9,11 @@ import Client from './pages/Clients/index';
 import Schedule from './pages/Schedule/index';
 import Config from './pages/SettingsPage/index';
 import SettingsProvider from "./Context/SettingsContext";
+import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
+import "../node_modules/@syncfusion/ej2-react-calendars/styles/material.css";
 
 const App = () => {
 

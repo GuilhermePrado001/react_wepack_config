@@ -1,4 +1,5 @@
 import React from 'react';
+import Schedule from '../../components/ScheduleCalendar';
 
 const Schedules = () => {
     return (
@@ -7,20 +8,7 @@ const Schedules = () => {
                 <h5>Agendamentos</h5>
             </div>
             <div class="card-body">
-                <table class="table">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Horário</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <Schedule></Schedule>
             </div>
         </div>
     )
