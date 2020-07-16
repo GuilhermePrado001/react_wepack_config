@@ -10,7 +10,8 @@ plugins.push(new ExtractTextPlugin('styles.css'));
 plugins.push(
   new webpack.ProvidePlugin({
     $: 'jquery/dist/jquery.js',
-    jQuery: 'jquery/dist/jquery.js'
+    jQuery: 'jquery/dist/jquery.js',
+    Popper: ['popper.js', 'default']
   })
 );
 

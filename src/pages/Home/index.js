@@ -1,10 +1,19 @@
 import "bootstrap/js/src/carousel.js";
 import ProductsList from '../../components/ProductList/index.js'
 import InfoComponent from '../../components/InfoCard/index.js'
-import React from 'react';
+import React, { useContext } from 'react';
+import { SettingContext } from "../../Context/SettingsContext.js";
 
 const HomeComponent = () => {
 
+    const settingContext = useContext(SettingContext);
+
+    const showStore = () => {
+
+        if(settingContext.storeState)
+            return <ProductsList />
+    }
+    
     return (
         <div>
             <div id="carouselExampleIndicators" class="carousel slide mt-1" data-ride="carousel">
@@ -34,8 +43,8 @@ const HomeComponent = () => {
                 </a>
             </div>
 
-            <InfoComponent title={"Sobre nós"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."} />
-            <ProductsList />
+            <InfoComponent title={"Sobre nós"} content={settingContext.aboutState} />
+            {showStore()}
          
         </div>
 

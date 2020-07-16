@@ -1,16 +1,14 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import BootstrapSwitchButton from 'bootstrap-switch-button-react'
-import { StoreContext } from '../../Context/StoreContext';
+import { SettingContext } from '../../Context/SettingsContext';
 
 function ManageStore() {
 
-  const [check, setCheck] = useState(false);
+  const settingContext = useContext(SettingContext);
 
-  const msg = useContext(StoreContext);
+  function showInput() {
 
-   function showInput() {
-
-    if (check) {
+    if (settingContext.storeState) {
       return (
         <form className="mt-2">
 
@@ -20,7 +18,7 @@ function ManageStore() {
               <input type="text" class="form-control mt-2" placeholder="Descrição" />
             </div>
           </div>
-            {msg}
+
           <button class="btn btn-primary mt-2" type="button">Adicionar a Loja</button>
 
         </form>
@@ -29,19 +27,22 @@ function ManageStore() {
 
   }
 
-
   return (
-    <div class="card">
 
-      <div style={{height: "250px"}} class="card-body">
+    <div class="card">
+      <div style={{ height: "250px" }} class="card-body">
         <h5 class="card-title">Gerenciar Loja</h5>
+
         <BootstrapSwitchButton
           onChange={(checked) => {
-            setCheck(checked)
+            settingContext.storeDispatch({
+              type: "SWITCH_VISIBILITY",
+              payload: checked
+            })
           }}
-          checked={check} size="sm mr-1"
+          checked={settingContext.storeState} size="sm mr-1"
           onstyle="outline-success"
-          offstyle="outline-danger"         
+          offstyle="outline-danger"
         />
 
         {showInput()}

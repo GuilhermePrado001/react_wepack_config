@@ -1,6 +1,7 @@
 import React from 'react';
 import ManageStore from '../../components/ManegeStore';
 import ManagePromotion from '../../components/ManagePromotion';
+import CardManage from '../../components/ManageInfoCard';
 
 const Config = () => {
     return (
@@ -16,6 +17,9 @@ const Config = () => {
                     </div>
                     <div className="col">
                         <ManagePromotion />
+                    </div>
+                    <div className="col-md-12">
+                        <CardManage />
                     </div>
                 </div>
             </div>
