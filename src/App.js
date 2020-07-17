@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './pages/Header/NavBar';
 import Home from './pages/Home/index';
@@ -18,18 +18,19 @@ const App = () => {
     <>
       <div className="container">
         <div className="main-app">
-            <SettingsProvider>
+          <SettingsProvider>
+            <BrowserRouter>
+              <Switch>
+                <NavBar />
+                <Route exact path="/" component={Home}></Route>
+                <Route path="/schedule" component={Schedule}></Route>
+                <Route path="/clients" component={Client}></Route>
+                <Route path="/config" component={Config}></Route>
+                <Route path="/reports" component={Report}></Route>
+              </Switch>
+            </BrowserRouter>
 
-          <BrowserRouter>
-              <NavBar />
-              <Route exact path="/" component={Home}></Route>
-              <Route path="/schedule" component={Schedule}></Route>
-              <Route path="/clients" component={Client}></Route>
-              <Route path="/config" component={Config}></Route>
-              <Route path="/reports" component={Report}></Route>
-          </BrowserRouter>
-
-            </SettingsProvider>
+          </SettingsProvider>
         </div>
       </div>
     </>
