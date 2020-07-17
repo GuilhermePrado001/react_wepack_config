@@ -20,14 +20,14 @@ const App = () => {
         <div className="main-app">
           <SettingsProvider>
             <BrowserRouter>
-              <Switch>
+
                 <NavBar />
                 <Route exact path="/" component={Home}></Route>
                 <Route path="/schedule" component={Schedule}></Route>
                 <Route path="/clients" component={Client}></Route>
                 <Route path="/config" component={Config}></Route>
                 <Route path="/reports" component={Report}></Route>
-              </Switch>
+  
             </BrowserRouter>
 
           </SettingsProvider>

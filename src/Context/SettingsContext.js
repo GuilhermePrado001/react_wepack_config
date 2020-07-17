@@ -1,6 +1,6 @@
 import React,{ createContext, useReducer } from 'react'
 
-var initialStoreState = false;
+var initialStoreState = true;
 var initialAboutUsState = "É possível alterar este texto em configurações";
 var initialTimeConfig =  "30";
 
