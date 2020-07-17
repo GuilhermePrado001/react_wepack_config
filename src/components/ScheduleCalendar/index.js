@@ -27,7 +27,7 @@ const DatePickerSchedule = () => {
     return (
         <div className="mt-2 mb-2 text-center">
             <p>Escolha um horário livre na tabela e faça o agendamento</p>
-            <button class="btn btn-sm btn-primary mb-1 mr-3" type="button">Agendar</button>
+            <button className="btn btn-sm btn-primary mb-1 mr-3" type="button">Agendar</button>
             <DatePicker
                 selected={startDate}
                 onChange={dayChange}

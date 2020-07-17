@@ -4,9 +4,9 @@ import ClientTable from "../ClientSchedule";
 const TableSchedule = () => {
 
     return (
-        <div class="table-responsive">
-            <table class="table">
-                <thead class="thead-dark">
+        <div className="table-responsive">
+            <table className="table table-sm">
+                <thead className="thead-dark">
                     <tr>
                         <th scope="col">Horario</th>
                         <th scope="col">Nome</th>

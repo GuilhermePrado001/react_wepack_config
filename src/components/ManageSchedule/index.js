@@ -16,19 +16,19 @@ const WorkInterval = () => {
     return (
         <div className="card h-100">
 
-            <div class="card-body">
-                <h5 class="card-title">Gerenciar Tempo</h5>
-                <div class="form-group">
+            <div className="card-body">
+                <h5 className="card-title">Gerenciar Tempo</h5>
+                <div className="form-group">
 
                     <label><b>Intervalo entre cortes</b></label>
-                    <select class="form-control" id="selectInterval" defaultValue={timeState}>
+                    <select className="form-control" id="selectInterval" defaultValue={timeState}>
                         <option>15</option>
                         <option>30</option>
                         <option>60</option>                   
                     </select>
                 </div>
 
-                <button onClick={clickHandler} type="button" class="btn btn-sm btn-outline-primary mt-2">Salvar</button>
+                <button onClick={clickHandler} type="button" className="btn btn-sm btn-outline-primary mt-2">Salvar</button>
             </div>
 
         </div>

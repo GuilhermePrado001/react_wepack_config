@@ -12,14 +12,14 @@ function ManageStore() {
       return (
         <form className="mt-2">
 
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control form-control-sm" placeholder="Nome do Produto" />
-              <input type="text" class="form-control form-control-sm mt-2" placeholder="Descrição" />
+          <div className="row">
+            <div className="col">
+              <input type="text" className="form-control form-control-sm" placeholder="Nome do Produto" />
+              <input type="text" className="form-control form-control-sm mt-2" placeholder="Descrição" />
             </div>
           </div>
 
-          <button class="btn btn-sm btn-primary mt-2" type="button">Adicionar a Loja</button>
+          <button className="btn btn-sm btn-primary mt-2" type="button">Adicionar a Loja</button>
 
         </form>
       );
@@ -29,9 +29,9 @@ function ManageStore() {
 
   return (
 
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Gerenciar Loja</h5>
+    <div className="card h-100">
+      <div className="card-body">
+        <h5 className="card-title">Gerenciar Loja</h5>
 
         <BootstrapSwitchButton
           onChange={(checked) => {

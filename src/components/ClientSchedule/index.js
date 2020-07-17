@@ -21,7 +21,7 @@ const ClientTable = () => {
 
             if (c.status == 'Agendado' || c.status == 'Almoço') {
                 return (
-                    <tr class="table-danger">
+                    <tr className="table-danger">
                         <th scope="row">{c.horario}</th>
                         <td>{c.name}</td>
                         <td>{c.status}</td>
@@ -29,7 +29,7 @@ const ClientTable = () => {
                 )
             }else{
                 return (
-                    <tr class="table-success">
+                    <tr className="table-success">
                         <th scope="row">{c.horario}</th>
                         <td>{c.name}</td>
                         <td>{c.status}</td>

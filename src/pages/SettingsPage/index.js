@@ -7,11 +7,11 @@ import WorkInterval from '../../components/ManageSchedule';
 const Config = () => {
     return (
 
-        <div style={{height: "500%"}} class="card mt-2">
-            <div class="card-header">
+        <div style={{height: "500%"}} className="card mt-2">
+            <div className="card-header">
                 <h5>Configurações</h5>
             </div>
-            <div class="card-body">
+            <div className="card-body">
                 <div className="row">
                     <div className="col-md-4 col-sm-12 mt-2">
                         <ManageStore />

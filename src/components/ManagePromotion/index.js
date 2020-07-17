@@ -12,8 +12,8 @@ function ManagePromotion() {
             return (
                 <form className="mt-2">
                     <p>
-                        <small class="text-muted">Após quantos corte o cliente ganhará o corte grátis?</small>
-                        <input type="text" class="form-control form-control-sm " placeholder="Qtd" />
+                        <small className="text-muted">Após quantos corte o cliente ganhará o corte grátis?</small>
+                        <input type="text" className="form-control form-control-sm " placeholder="Qtd" />
                     </p>               
                 </form>
             );
@@ -23,8 +23,8 @@ function ManagePromotion() {
     return (
         <div className="card h-100">
             
-            <div class="card-body">
-                <h5 class="card-title">Gerenciar Promoção</h5>
+            <div className="card-body">
+                <h5 className="card-title">Gerenciar Promoção</h5>
                 
                 <BootstrapSwitchButton
                     onChange={(checked) => {

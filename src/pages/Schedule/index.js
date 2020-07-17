@@ -4,11 +4,11 @@ import TableSchedule from '../../components/TableSchedule';
 
 const Schedules = () => {
     return (
-        <div class="card mt-2">
-            <div class="card-header">
+        <div className="card mt-2">
+            <div className="card-header">
                 <h5>Agendamentos</h5>
             </div>
-            <div class="card-body">
+            <div className="card-body">
 
                 <DatePickerSchedule />
                 <TableSchedule />
