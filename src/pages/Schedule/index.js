@@ -1,5 +1,6 @@
 import React from 'react';
-import Schedule from '../../components/ScheduleCalendar';
+import DatePickerSchedule from '../../components/ScheduleCalendar';
+import TableSchedule from '../../components/TableSchedule';
 
 const Schedules = () => {
     return (
@@ -8,7 +9,10 @@ const Schedules = () => {
                 <h5>Agendamentos</h5>
             </div>
             <div class="card-body">
-                <Schedule></Schedule>
+
+                <DatePickerSchedule />
+                <TableSchedule />
+          
             </div>
         </div>
     )

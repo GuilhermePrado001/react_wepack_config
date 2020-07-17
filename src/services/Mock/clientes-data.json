@@ -1,0 +1,84 @@
+{
+    "clients": [
+        {
+            "name": "Guilherme",
+            "horario": "08:00",
+            "status": "Agendado"
+        },
+        {
+            "name": "Silvana",
+            "horario": "08:30",
+            "status": "Agendado"
+        },
+        {
+            "name": "Nicholas",
+            "horario": "09:00",
+            "status": "Agendado"
+        },
+        {
+            "name": "",
+            "horario": "09:30",
+            "status": "Livre"
+        },
+        {
+            "name": "",
+            "horario": "10:00",
+            "status": "Livre"
+        },
+        {
+            "name": "",
+            "horario": "10:30",
+            "status": "Livre"
+        },
+        {
+            "name": "",
+            "horario": "11:00",
+            "status": "Livre"
+        },
+        {
+            "name": "",
+            "horario": "11:30",
+            "status": "Livre"
+        },
+        {
+            "name": "",
+            "horario": "12:00",
+            "status": "Almoço"
+        },
+        {
+            "name": "",
+            "horario": "12:30",
+            "status": "Almoço"
+        },
+        {
+            "name": "",
+            "horario": "13:00",
+            "status": "Almoço"
+        },
+        {
+            "name": "",
+            "horario": "13:30",
+            "status": "Almoço"
+        },
+        {
+            "name": "",
+            "horario": "14:00",
+            "status": "Livre"
+        },
+        {
+            "name": "",
+            "horario": "14:30",
+            "status": "Livre"
+        },
+        {
+            "name": "",
+            "horario": "15:00",
+            "status": "Livre"
+        },
+        {
+            "name": "Manuela",
+            "horario": "15:30",
+            "status": "Agendado"
+        }
+    ]
+}

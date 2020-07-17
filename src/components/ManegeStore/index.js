@@ -29,7 +29,7 @@ function ManageStore() {
 
   return (
 
-    <div class="card">
+    <div class="card h-100">
       <div class="card-body">
         <h5 class="card-title">Gerenciar Loja</h5>
 

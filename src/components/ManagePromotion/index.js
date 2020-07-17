@@ -21,7 +21,7 @@ function ManagePromotion() {
     }
 
     return (
-        <div className="card">
+        <div className="card h-100">
             
             <div class="card-body">
                 <h5 class="card-title">Gerenciar Promoção</h5>

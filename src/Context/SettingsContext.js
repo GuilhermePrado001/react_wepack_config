@@ -2,6 +2,7 @@ import React,{ createContext, useReducer } from 'react'
 
 var initialStoreState = false;
 var initialAboutUsState = "É possível alterar este texto em configurações";
+var initialTimeConfig =  "30";
 
 export const SettingContext = createContext();
 
@@ -24,12 +25,22 @@ const SettingsProvider = ({children}) => {
                 return "";
         }  
     }
+
+    const timeConfigReducer = (state, action) => {
+        switch (action.type) {
+            case "TIME_CONFIG":
+                return initialTimeConfig = action.payload;       
+            default:
+                return "";
+        }  
+    }
     
     const [storeState , storeDispatch] = useReducer(storeReducer, initialStoreState);
     const [aboutState , aboutDispatch] = useReducer(aboutUsReducer, initialAboutUsState);
+    const [timeState , timeDispatch] = useReducer(timeConfigReducer, initialTimeConfig);
     
     return(
-        <SettingContext.Provider value={{storeState , storeDispatch, aboutState , aboutDispatch}}>
+        <SettingContext.Provider value={{storeState , storeDispatch, aboutState , aboutDispatch, timeState , timeDispatch}}>
             {children}
         </SettingContext.Provider>
     )

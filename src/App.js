@@ -18,18 +18,18 @@ const App = () => {
     <>
       <div className="container">
         <div className="main-app">
-          <BrowserRouter>
             <SettingsProvider>
 
+          <BrowserRouter>
               <NavBar />
-              <Route exact path="/" component={Config}></Route>
+              <Route exact path="/" component={Home}></Route>
               <Route path="/schedule" component={Schedule}></Route>
               <Route path="/clients" component={Client}></Route>
               <Route path="/config" component={Config}></Route>
               <Route path="/reports" component={Report}></Route>
+          </BrowserRouter>
 
             </SettingsProvider>
-          </BrowserRouter>
         </div>
       </div>
     </>
