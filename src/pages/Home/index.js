@@ -43,8 +43,9 @@ const HomeComponent = () => {
                 </a>
             </div>
 
-            <InfoComponent title={"Sobre nós"} content={settingContext.aboutState} />
-            {showStore()}
+            <InfoComponent title={"Sobre nós"} content={"Sou uma batata"} />
+            {/* <InfoComponent title={"Sobre nós"} content={settingContext.aboutState ? "" : ""} /> */}
+            {/* {showStore()} */}
          
         </div>
 

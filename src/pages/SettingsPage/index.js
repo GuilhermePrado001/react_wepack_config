@@ -1,8 +1,8 @@
 import React from 'react';
-import ManageStore from '../../components/ManegeStore';
-import ManagePromotion from '../../components/ManagePromotion';
-import CardManage from '../../components/ManageInfoCard';
-import WorkInterval from '../../components/ManageSchedule';
+import ManageStore from '../../Components/ManegeStore';
+import ManagePromotion from '../../Components/ManagePromotion';
+import CardManage from '../../Components/ManageInfoCard';
+import WorkInterval from '../../Components/ManageSchedule';
 
 const Config = () => {
     return (
